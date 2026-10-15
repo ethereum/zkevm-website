@@ -1,8 +1,15 @@
 {
   "playlistId": "PLJqWcTqh_zKH-673NddaSqiQFIWMMopf_",
   "playlistUrl": "https://www.youtube.com/playlist?list=PLJqWcTqh_zKH-673NddaSqiQFIWMMopf_",
-  "lastUpdated": "2026-10-14T07:11:21.382Z",
+  "lastUpdated": "2026-10-15T07:11:32.330Z",
   "videos": [
+    {
+      "title": "L1-zkEVM breakout #09, October 14, 2026",
+      "videoId": "VJnUl6udMGg",
+      "url": "https://www.youtube.com/watch?v=VJnUl6udMGg",
+      "date": "2026-10-14",
+      "author": "Ethereum"
+    },
     {
       "title": "L1-zkEVM breakout #08, September 09, 2026",
       "videoId": "sd2EPjsK1XY",
