@@ -81,6 +81,13 @@ try {
     };
   }
 
+  // An empty summary means every fetch failed (e.g. the upstream path moved);
+  // fail instead of overwriting the last good data.
+  if (Object.keys(summary.zkvms).length === 0) {
+    console.error('No zkVM data found in', rawDir);
+    process.exit(1);
+  }
+
   fs.writeFileSync(outputPath, JSON.stringify(summary, null, 2));
   console.log(`Transformed ${Object.keys(summary.zkvms).length} zkVMs -> ${outputPath}`);
 } catch (err) {

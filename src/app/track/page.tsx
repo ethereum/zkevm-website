@@ -3,9 +3,14 @@
 import { useState } from "react";
 import PageLayout from "@/components/PageLayout";
 import { clientData } from "@/data/zkevm-tracker";
-import testMonitorData from "@/data/test-monitor-summary.json";
+import testMonitorSummary from "@/data/test-monitor-summary.json";
+import type { TestMonitorSummary } from "@/lib/types";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github } from "lucide-react";
+
+// Explicit type so the build still type-checks when the synced data has no zkVMs
+const testMonitorData: TestMonitorSummary = testMonitorSummary;
+
 function ClientIcon({ name }: { name: string }) {
   return (
     <div className="w-10 h-10 rounded-lg flex items-center justify-center text-sm font-bold flex-shrink-0" style={{ backgroundColor: 'var(--accent-blue)', color: 'var(--accent-btn-text)' }}>

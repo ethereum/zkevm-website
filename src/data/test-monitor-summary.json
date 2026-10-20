@@ -1,4 +1,59 @@
 {
-  "lastUpdated": "2026-10-18T06:08:33.235Z",
-  "zkvms": {}
+  "lastUpdated": "2026-10-20T17:01:39.766Z",
+  "zkvms": {
+    "lambdavm": {
+      "isa": "RV64IM_Zicclsm",
+      "commit": "09ef37d9",
+      "lastRun": "2026-09-28T11:12:47Z",
+      "isRV64": true,
+      "full": {
+        "passed": 72,
+        "failed": 0,
+        "total": 72,
+        "passRate": "100.0"
+      },
+      "standard": {
+        "passed": 72,
+        "failed": 0,
+        "total": 72,
+        "passRate": "100.0"
+      }
+    },
+    "openvm": {
+      "isa": "RV64IM_Zicclsm",
+      "commit": "a391b22e",
+      "lastRun": "2026-09-28T05:24:26Z",
+      "isRV64": true,
+      "full": {
+        "passed": 72,
+        "failed": 0,
+        "total": 72,
+        "passRate": "100.0"
+      },
+      "standard": {
+        "passed": 72,
+        "failed": 0,
+        "total": 72,
+        "passRate": "100.0"
+      }
+    },
+    "zisk": {
+      "isa": "RV64IMFDAC_Zicclsm",
+      "commit": "02d2ae7b",
+      "lastRun": "2026-09-28T07:43:03Z",
+      "isRV64": true,
+      "full": {
+        "passed": 139,
+        "failed": 179,
+        "total": 318,
+        "passRate": "43.7"
+      },
+      "standard": {
+        "passed": 72,
+        "failed": 0,
+        "total": 72,
+        "passRate": "100.0"
+      }
+    }
+  }
 }

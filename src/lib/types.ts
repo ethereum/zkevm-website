@@ -77,6 +77,27 @@ export interface ClientInfo {
   specCompliance?: 'compliant' | 'in-progress' | 'not-started';
 }
 
+// Test results for one ACT4 suite, from the zkVM test monitor
+export interface TestSuiteResult {
+  passed: number;
+  failed: number;
+  total: number;
+  passRate: string;
+}
+
+// Shape of src/data/test-monitor-summary.json (written by scripts/transform-test-data.js)
+export interface TestMonitorSummary {
+  lastUpdated: string;
+  zkvms: Record<string, {
+    isa: string;
+    commit: string | null;
+    lastRun: string | null;
+    isRV64: boolean;
+    full: TestSuiteResult | null;
+    standard: TestSuiteResult | null;
+  }>;
+}
+
 // Media item for the Media page
 export interface MediaItem {
   title: string;
