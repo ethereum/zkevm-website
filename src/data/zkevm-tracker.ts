@@ -124,9 +124,9 @@ export const clientData: ClientInfo[] = [
   {
     name: 'Nethermind',
     type: 'execution',
-    description: 'Enterprise-grade Ethereum execution client written in .NET.',
-    language: '.NET',
-    links: { github: 'https://github.com/NethermindEth/nethermind', website: 'https://nethermind.io' },
+    description: 'Enterprise-grade Ethereum execution client written in C#.',
+    language: 'C#',
+    links: { github: 'https://github.com/NethermindEth/nethermind', website: 'https://www.nethermind.io/nethermind-client' },
     specCompliance: 'in-progress',
   },
   {
