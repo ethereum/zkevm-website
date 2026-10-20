@@ -31,7 +31,7 @@ function rehypeImageLinks() {
           properties: {
             href: src,
             target: '_blank',
-            rel: 'noopener noreferrer',
+            rel: ['noopener', 'noreferrer'],
           },
           children: [node],
         };
