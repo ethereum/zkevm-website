@@ -30,5 +30,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
+          check-latest: true
       - name: Check Markdown formatting
         run: npm run format:markdown:check
