@@ -17,6 +17,12 @@ jobs:
       - name: Checkout website repo
         uses: actions/checkout@v4
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          check-latest: true
+
       - name: Fetch playlist videos
         run: node scripts/sync-youtube-playlist.js
 
