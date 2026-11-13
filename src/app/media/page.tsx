@@ -6,6 +6,17 @@ import { mediaData } from "@/data/zkevm-tracker";
 import playlistData from "@/data/youtube-playlist.json";
 import { ExternalLink, ChevronDown } from "lucide-react";
 
+// Keep the element type stable when the generated JSON contains an empty array.
+type PlaylistVideo = {
+  title: string;
+  videoId: string;
+  url: string;
+  date: string;
+  author: string;
+};
+
+const playlistVideos: PlaylistVideo[] = playlistData.videos;
+
 function getYouTubeId(url: string): string | null {
   const match = url.match(/(?:v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
   return match ? match[1] : null;
@@ -20,7 +31,7 @@ const allMedia = [
     event: item.event,
     speaker: item.speaker,
   })),
-  ...playlistData.videos.map((video) => ({
+  ...playlistVideos.map((video) => ({
     title: video.title,
     url: video.url,
     date: video.date,
